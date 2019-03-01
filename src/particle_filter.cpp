@@ -28,8 +28,7 @@ void ParticleFilter::init(double x, double y, double theta, double std[])
 
   if (is_initialized == false)
   {
-    num_particles = 101; //  Set the number of particles
-    std::default_random_engine gen;
+    num_particles = 100; //  Set the number of particles
 
     // Create the normal distribution for the noise
     std::normal_distribution<double> dist_x(0, std[0]);
